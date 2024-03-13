@@ -49,7 +49,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-www.solvia.ch (https://www.solvia.ch)
+[www.solvia.ch](https://www.solvia.ch)
 
 Project Link: [https://github.com/itsChris/SolviaWindowsSizer](https://github.com/itsChris/SolviaWindowsSizer)
 
