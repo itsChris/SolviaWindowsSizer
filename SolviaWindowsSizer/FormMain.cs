@@ -23,8 +23,8 @@ namespace SolviaWindowsSizer
             listViewWindows.ColumnClick += new ColumnClickEventHandler(listViewWindows_ColumnClick);
 
             // labelHints
-            labelHints.AutoSize = true;  // Enable auto-sizing
-            labelHints.AutoEllipsis = true;  // Show ellipsis if the text is trimmed
+            labelHints2.AutoSize = true;  // Enable auto-sizing
+            labelHints2.AutoEllipsis = true;  // Show ellipsis if the text is trimmed
 
 
             // Enumerate windows and add them to the ListView.

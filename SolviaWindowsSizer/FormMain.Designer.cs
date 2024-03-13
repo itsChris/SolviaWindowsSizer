@@ -34,9 +34,11 @@
             this.textBoxY = new System.Windows.Forms.TextBox();
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
-            this.labelHints = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelHints2 = new System.Windows.Forms.Label();
+            this.labelHints1 = new System.Windows.Forms.Label();
+            this.labelHintsHeader = new System.Windows.Forms.Label();
+            this.labelWindows = new System.Windows.Forms.Label();
+            this.labelDimensions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listViewWindows
@@ -45,10 +47,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewWindows.HideSelection = false;
-            this.listViewWindows.Location = new System.Drawing.Point(14, 15);
+            this.listViewWindows.Location = new System.Drawing.Point(16, 45);
             this.listViewWindows.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listViewWindows.Name = "listViewWindows";
-            this.listViewWindows.Size = new System.Drawing.Size(1005, 1026);
+            this.listViewWindows.Size = new System.Drawing.Size(930, 892);
             this.listViewWindows.TabIndex = 1;
             this.listViewWindows.UseCompatibleStateImageBehavior = false;
             this.listViewWindows.View = System.Windows.Forms.View.Details;
@@ -56,20 +58,22 @@
             // textBoxX
             // 
             this.textBoxX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxX.Location = new System.Drawing.Point(1102, 15);
+            this.textBoxX.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxX.Location = new System.Drawing.Point(1041, 45);
             this.textBoxX.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(112, 26);
+            this.textBoxX.Size = new System.Drawing.Size(124, 27);
             this.textBoxX.TabIndex = 2;
             this.textBoxX.Text = "1920";
             // 
             // textBoxY
             // 
             this.textBoxY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxY.Location = new System.Drawing.Point(1102, 50);
+            this.textBoxY.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxY.Location = new System.Drawing.Point(1041, 76);
             this.textBoxY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxY.Name = "textBoxY";
-            this.textBoxY.Size = new System.Drawing.Size(112, 26);
+            this.textBoxY.Size = new System.Drawing.Size(124, 27);
             this.textBoxY.TabIndex = 3;
             this.textBoxY.Text = "1080";
             // 
@@ -77,9 +81,10 @@
             // 
             this.labelX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX.AutoSize = true;
-            this.labelX.Location = new System.Drawing.Point(1046, 19);
+            this.labelX.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX.Location = new System.Drawing.Point(978, 49);
             this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(24, 20);
+            this.labelX.Size = new System.Drawing.Size(26, 18);
             this.labelX.TabIndex = 4;
             this.labelX.Text = "X:";
             // 
@@ -87,65 +92,92 @@
             // 
             this.labelY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelY.AutoSize = true;
-            this.labelY.Location = new System.Drawing.Point(1046, 54);
+            this.labelY.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelY.Location = new System.Drawing.Point(978, 80);
             this.labelY.Name = "labelY";
-            this.labelY.Size = new System.Drawing.Size(24, 20);
+            this.labelY.Size = new System.Drawing.Size(24, 18);
             this.labelY.TabIndex = 5;
             this.labelY.Text = "Y:";
             // 
-            // labelHints
+            // labelHints2
             // 
-            this.labelHints.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelHints.AutoEllipsis = true;
-            this.labelHints.AutoSize = true;
-            this.labelHints.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHints.Location = new System.Drawing.Point(12, 1119);
-            this.labelHints.Name = "labelHints";
-            this.labelHints.Size = new System.Drawing.Size(1067, 18);
-            this.labelHints.TabIndex = 6;
-            this.labelHints.Text = "After refreshing, if you select any item within the ListView, its display size wi" +
+            this.labelHints2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelHints2.AutoEllipsis = true;
+            this.labelHints2.AutoSize = true;
+            this.labelHints2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHints2.Location = new System.Drawing.Point(13, 1007);
+            this.labelHints2.Name = "labelHints2";
+            this.labelHints2.Size = new System.Drawing.Size(1067, 18);
+            this.labelHints2.TabIndex = 6;
+            this.labelHints2.Text = "After refreshing, if you select any item within the ListView, its display size wi" +
     "ll adjust based on predefined X and Y dimensions.";
             // 
-            // label1
+            // labelHints1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoEllipsis = true;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 1092);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(450, 18);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Pressing F5 will refresh the contents of the ListView. ";
+            this.labelHints1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelHints1.AutoEllipsis = true;
+            this.labelHints1.AutoSize = true;
+            this.labelHints1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHints1.Location = new System.Drawing.Point(13, 983);
+            this.labelHints1.Name = "labelHints1";
+            this.labelHints1.Size = new System.Drawing.Size(450, 18);
+            this.labelHints1.TabIndex = 7;
+            this.labelHints1.Text = "Pressing F5 will refresh the contents of the ListView. ";
             // 
-            // label2
+            // labelHintsHeader
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoEllipsis = true;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 1064);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Hints:";
+            this.labelHintsHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelHintsHeader.AutoEllipsis = true;
+            this.labelHintsHeader.AutoSize = true;
+            this.labelHintsHeader.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHintsHeader.Location = new System.Drawing.Point(13, 958);
+            this.labelHintsHeader.Name = "labelHintsHeader";
+            this.labelHintsHeader.Size = new System.Drawing.Size(58, 18);
+            this.labelHintsHeader.TabIndex = 8;
+            this.labelHintsHeader.Text = "Hints:";
+            // 
+            // labelWindows
+            // 
+            this.labelWindows.AutoEllipsis = true;
+            this.labelWindows.AutoSize = true;
+            this.labelWindows.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWindows.Location = new System.Drawing.Point(13, 16);
+            this.labelWindows.Name = "labelWindows";
+            this.labelWindows.Size = new System.Drawing.Size(203, 18);
+            this.labelWindows.TabIndex = 9;
+            this.labelWindows.Text = "Windows/Applications";
+            // 
+            // labelDimensions
+            // 
+            this.labelDimensions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDimensions.AutoEllipsis = true;
+            this.labelDimensions.AutoSize = true;
+            this.labelDimensions.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDimensions.Location = new System.Drawing.Point(980, 8);
+            this.labelDimensions.Name = "labelDimensions";
+            this.labelDimensions.Size = new System.Drawing.Size(154, 18);
+            this.labelDimensions.TabIndex = 10;
+            this.labelDimensions.Text = "Size/Dimensions";
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1228, 1148);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelHints);
+            this.ClientSize = new System.Drawing.Size(1178, 1033);
+            this.Controls.Add(this.labelDimensions);
+            this.Controls.Add(this.labelWindows);
+            this.Controls.Add(this.labelHintsHeader);
+            this.Controls.Add(this.labelHints1);
+            this.Controls.Add(this.labelHints2);
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
             this.Controls.Add(this.textBoxY);
             this.Controls.Add(this.textBoxX);
             this.Controls.Add(this.listViewWindows);
+            this.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(1250, 0);
+            this.MinimumSize = new System.Drawing.Size(1200, 480);
             this.Name = "FormMain";
             this.Text = "Solvia - Windows Resizer";
             this.ResumeLayout(false);
@@ -159,9 +191,11 @@
         private System.Windows.Forms.TextBox textBoxY;
         private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.Label labelY;
-        private System.Windows.Forms.Label labelHints;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelHints2;
+        private System.Windows.Forms.Label labelHints1;
+        private System.Windows.Forms.Label labelHintsHeader;
+        private System.Windows.Forms.Label labelWindows;
+        private System.Windows.Forms.Label labelDimensions;
     }
 }
 
